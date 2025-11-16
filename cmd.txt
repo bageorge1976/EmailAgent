@@ -1,0 +1,12 @@
+python webhook_receiver.py 8080
+
+python mailhook_server.py \
+  --webhook-url "http://localhost:8080/email-webhook" \
+  --token "supersecret" \
+  --port 2525 \
+  --log-level DEBUG
+
+swaks --to you@example.com \
+      --from test@sender.net \
+      --server 127.0.0.1:2525 \
+      --data "Subject: Hello\n\nThis is a test."

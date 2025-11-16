@@ -1,0 +1,29 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.agent-venv/
+.venv/
+env/
+venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
+*.tmp
+*.bak
+
+# Compressed or bundled files
+mailhook_bundle.zip
+
+# Docker configuration
+Dockerfile
+
+# IDE/project settings
+.vscode/
+.idea/
