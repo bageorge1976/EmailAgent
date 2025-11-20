@@ -10,8 +10,6 @@ from typing import Any, Dict, Union
 from fastapi import FastAPI, Request, Header, Response
 import uvicorn
 
-import os
-#from kaggle_secrets import UserSecretsClient
 
 # Import ADK components (silently during module load)
 try:
@@ -25,6 +23,7 @@ except ImportError as e:
 
 # Initialize runner only once
 runner = None
+
 
 def get_runner():
     global runner
